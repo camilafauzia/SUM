@@ -1,0 +1,455 @@
+<html lang="en-gb" class="no-js">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Smart Urban Mapping: Deep Learning-Based Building Extraction and Urban Zoning Analysis
+	</title>
+	<meta name="description" content="">
+	<meta name="author" content="WebThemez">
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/isotope.css" media="screen" />
+	<link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="css/da-slider.css" />
+	<link rel="stylesheet" href="css/styles.css" />
+	<link href="font/css/font-awesome.min.css" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+	<header class="header">
+		<div class="container">
+			<nav class="navbar navbar-inverse" role="navigation">
+				<div class="navbar-header">
+					<button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse"
+						data-target="#main-nav">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div id="main-nav" class="collapse navbar-collapse">
+					<ul class="nav navbar-nav" id="mainNav">
+						<li class="active"><a href="#home" class="scroll-link">Home</a></li>
+						<li><a href="#about" class="scroll-link">About</a></li>
+						<li><a href="#solution" class="scroll-link">Workflow</a></li>
+						<li><a href="#map-section" class="scroll-link">Extraction Map</a></li>
+						<li><a href="#use-case" class="scroll-link">Use Case (Urban & Zoning)</a></li>
+						<li><a href="#esri-stack" class="scroll-link">Deep Learning Workflow</a></li>
+						<li><a href="#summary" class="scroll-link">Summary</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<div id="#top"></div>
+	<section id="home" class="page-section">
+		<div class="banner-container">
+			<div class="container banner-content">
+				<div id="da-slider" class="da-slider">
+					<div class="da-slide">
+						<h2>Automated Building Extraction</h2>
+						<p>Leveraging ArcGIS Deep Learning tools to detect and extract building footprints from
+							aerial imagery automatically — faster, scalable, and accurate.</p>
+						<a href="#solution" class="da-link button-outline">See Workflow</a>
+						<div class="da-img"></div>
+					</div>
+					<div class="da-slide">
+						<h2>Interactive Mapping</h2>
+						<p>Publishing extracted building data to ArcGIS Online for real-time exploration,
+							collaboration, and decision-making in a smart city context.</p>
+						<a href="#map-section" class="da-link button-outline">View Extraction</a>
+						<div class="da-img"></div>
+					</div>
+					<div class="da-slide">
+						<h2>Spatial Suitability Assesment</h2>
+						<p>Providing reliable baseline data for spatial suitability assessments, such as KKPR
+							evaluation and urban growth planning simulations.</p>
+						<a href="#use-case" class="da-link button-outline">Explore Use Case</a>
+						<div class="da-img"></div>
+					</div>
+					<div class="da-slide">
+						<h2>AI-Driven Geospatial Analysis</h2>
+						<p>Showcasing the complete Esri ecosystem — from ArcGIS Pro Deep Learning extraction to
+							ArcGIS Online web-based visualization and beyond.</p>
+						<a href="#esri-stack" class="da-link button-outline">See Deep Learning Steps</a>
+						<div class="da-img"></div>
+					</div>
+					<nav class="da-arrows">
+						<span class="da-arrows-prev"></span>
+						<span class="da-arrows-next"></span>
+					</nav>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section id="about" class="page-section"
+		style="background-color: #f9f9f9; padding-top: 60px; padding-bottom: 60px; border-top: 4px solid #e0e0e0;">
+		<div class="container">
+			<div class="heading text-center" data-aos="fade-down">
+				<h2>About the Project</h2>
+				<p>
+					Rapid urbanization in Indonesian cities continues to present major spatial planning challenges,
+					including unregulated land use, scattered development, and limited oversight. Government efforts to
+					monitor urban growth and ensure compliance with zoning plans like <strong>RTRW (Rencana Tata Ruang
+						Wilayah / Spatial Plan)</strong> are often hindered by manual processes that are time-consuming,
+					costly, and outdated.
+				</p>
+				<p data-aos="fade-up" data-aos-delay="100">
+					This project leverages <strong>ArcGIS Pro’s Deep Learning</strong> tools to extract building
+					footprints from aerial imagery automatically. The resulting data provides a scalable, up-to-date
+					baseline that supports <strong>urban growth monitoring</strong> and feeds into spatial conformity
+					evaluations, such as <strong>KKPR (Kesesuaian Kegiatan Pemanfaatan Ruang / Spatial Suitability
+						Permit)</strong>.
+				</p>
+				<p data-aos="fade-up" data-aos-delay="200">
+					Once extracted, the building data is published to <strong>ArcGIS Online</strong> for collaborative
+					exploration and decision-making. Through this GeoAI-powered workflow, the project demonstrates how
+					automation and smart mapping technologies can enhance policy enforcement, optimize spatial analysis,
+					and empower governments with faster, data-driven urban governance.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<hr style="margin: 0; border: none; border-top: 4px solid #ddd;">
+
+	<section id="solution" class="page-section"
+		style="background-color: #ffffff; padding-top: 60px; padding-bottom: 60px; border-top: 4px solid #e0e0e0;">
+		<div class="container">
+			<div class="row">
+				<h2 class="text-center" data-aos="fade-down">Building Extraction Workflow</h2>
+				<p class="text-center" data-aos="fade-up">
+					An end-to-end geospatial workflow powered by ArcGIS — from aerial imagery acquisition to automated
+					building detection, online publishing, and spatial conformity assessment aligned with <strong>RTRW
+						(Spatial Plan)</strong> and <strong>KKPR (Spatial Suitability Permit)</strong> requirements.
+				</p>
+
+				<div class="col-md-3 col-sm-6" data-aos="zoom-in" data-aos-delay="100">
+					<div class="tray text-center">
+						<h3><i class="fa fa-image color"></i> &nbsp;Data Acquisition</h3>
+						<p>
+							High-resolution aerial imagery of Depok is collected as the primary geospatial input. This
+							imagery enables the identification of physical features such as building density.
+						</p>
+					</div>
+				</div>
+
+
+				<div class="col-md-3 col-sm-6" data-aos="zoom-in" data-aos-delay="200">
+					<div class="tray text-center">
+						<h3><i class="fa fa-brain color"></i> &nbsp;Deep Learning</h3>
+						<p>ArcGIS Pro's <em>Detect Objects Using Deep Learning</em> tool is used to extract building
+							footprints automatically, reducing manual mapping and improving processing speed and
+							accuracy.</p>
+					</div>
+				</div>
+
+				<div class="col-md-3 col-sm-6" data-aos="zoom-in" data-aos-delay="300">
+					<div class="tray text-center">
+						<h3><i class="fa fa-share-alt color"></i> &nbsp;Data Publishing</h3>
+						<p>Extracted buildings are published through <strong>ArcGIS Online</strong> as an interactive
+							web map, supporting open access, collaboration, and decision-making for spatial planning
+							authorities.</p>
+					</div>
+				</div>
+
+				<div class="col-md-3 col-sm-6" data-aos="zoom-in" data-aos-delay="400">
+					<div class="tray text-center">
+						<h3><i class="fa fa-chart-line color"></i> &nbsp;Spatial Analysis</h3>
+						<p>Overlays with <strong>RTRW (Spatial Plan)</strong> boundaries allow assessment of conformity
+							with zoning functions and inform <strong>KKPR (Spatial Suitability Permit)</strong>
+							evaluations for urban development.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<hr style="margin: 0; border: none; border-top: 4px solid #ddd;">
+
+	<section id="map-section" class="page-section"
+		style="background-color: #f9f9f9; padding-top: 60px; padding-bottom: 60px; border-top: 4px solid #e0e0e0;">
+		<div class="container">
+			<div class="row text-center mb-5">
+				<div class="col-lg-12" data-aos="fade-down">
+					<h2 class="section-heading">Building Extraction Map</h2>
+					<p class="text-muted">
+						Explore the output of deep learning-based building footprint detection from aerial imagery using
+						ArcGIS technology.
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="container position-relative">
+			<div class="map-container shadow rounded" style="overflow: hidden; position: relative;">
+				<iframe
+					src="https://www.arcgis.com/apps/instant/media/index.html?appid=9bb70828870547778005d514bd9217fb"
+					frameborder="0" width="100%" height="600" style="border:0;" allowfullscreen>
+				</iframe>
+
+				<div class="map-overlay" data-aos="fade-left">
+					<h4 class="text-uppercase" style="color:#f8d57e; letter-spacing: 1px;">Building Extraction</h4>
+					<p>
+						This section showcases the extracted building footprints in Depok, generated using the
+						<strong>Detect Objects Using Deep Learning</strong> tool in <strong>ArcGIS Pro</strong>.
+						The model processes aerial imagery to identify and delineate buildings efficiently.
+					</p>
+					<ul>
+						<li><strong>Input:</strong> Aerial imagery of Depok</li>
+						<li><strong>Tool:</strong> Detect Objects Using Deep Learning</li>
+						<li><strong>Output:</strong> Accurate vector building footprints</li>
+					</ul>
+					<p>
+						This approach significantly reduces manual digitizing time and integrates seamlessly with
+						<strong>ArcGIS Online</strong> for web-based visualization and analysis.
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<p class="text-center mt-3 text-muted" style="font-size: 14px; font-style: italic;" data-aos="fade-up"
+			data-aos-delay="200">
+			The map may take several moments to load. Please wait while the building extraction data is rendered.
+		</p>
+		</div>
+	</section>
+
+	<section id="use-case" class="page-section"
+		style="background-color: #ffffff; padding-top: 60px; padding-bottom: 60px; border-top: 4px solid #e0e0e0;">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center" data-aos="fade-down">
+					<h2 class="section-heading">Use Case: Urban Growth & Zoning Assesment</h2>
+					<p class="text-muted">
+						Building footprint data extracted using ArcGIS Pro’s Deep Learning capabilities can be
+						cross-referenced with zoning layers from the <strong>RTRW (Rencana Tata Ruang Wilayah / Spatial
+							Plan)</strong> to evaluate compliance for <strong>KKPR (Kesesuaian Kegiatan Pemanfaatan
+							Ruang / Spatial Suitability Permit)</strong>.
+					</p>
+				</div>
+			</div>
+
+			<div class="row align-items-center mt-5">
+				<div class="col-md-10 mx-auto" data-aos="zoom-in">
+					<div class="shadow-lg rounded overflow-hidden text-center">
+						<img src="images/rtr_depok.png" alt="RTR and building overlay" class="img-fluid"
+							style="border-radius: 10px; max-width: 80%; height: auto;">
+					</div>
+					<p class="text-muted text-center mt-2" style="font-style: italic; font-size: 13px;">
+						Note: The overlaid building footprints have been simplified due to file size constraints. Zoning
+						data visualized from <a href="https://gistaru.atrbpn.go.id/rtronline/"
+							target="_blank"><strong>GISTARU</strong></a> online viewer by ATR/BPN.
+					</p>
+				</div>
+
+				<div class="col-md-10 mx-auto mt-4" data-aos="fade-up">
+					<p>
+						<strong>KKPR</strong> is a regulatory mechanism in Indonesia that ensures land development
+						activities align with zoning regulations established in the <strong>RTRW</strong> or
+						<strong>RDTR (Detailed Spatial Plan)</strong>. Authorities assess whether buildings are located
+						in suitable zones and comply with allowable land use functions.
+					</p>
+					<p>
+						In this use case, building footprints extracted automatically using ArcGIS Pro’s <em>Detect
+							Objects Using Deep Learning</em> tool are spatially overlaid with zoning boundaries from
+						Depok City's official spatial plan. Most extracted buildings are situated in the <strong>Kawasan
+							Perdagangan dan Jasa</strong> (Commercial and Services Zone), and visual interpretation
+						confirms that many of them appear to be shopping malls and retail facilities — matching the
+						intended function.
+					</p>
+					<p>
+						However, a number of residential-looking structures also exist in this zone. While mixed-use
+						zoning may allow limited residential activity, it becomes an issue when housing dominates a zone
+						meant for commerce. Conversely, commercial buildings inside residential zones may also violate
+						zoning policy.
+					</p>
+					<p>
+						With deep learning-driven building extraction, urban planners and land officials can:
+					</p>
+					<ul style="padding-left: 20px;">
+						<li><strong>Identify building locations</strong> relative to zoning designations.</li>
+						<li><strong>Measure building area and density</strong> to assess development intensity.</li>
+						<li><strong>Analyze spatial patterns</strong> to flag non-conforming land use.</li>
+					</ul>
+					<p>
+						This geospatial approach streamlines the KKPR process by transforming manual checks into
+						efficient, data-driven assessments — ultimately supporting better compliance monitoring and
+						informed urban decision-making.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<hr style="margin: 0; border: none; border-top: 4px solid #ddd;">
+
+	<section id="esri-stack" class="page-section"
+		style="background-color: #f4f6f7; padding: 60px 0; border-top: 4px solid #e0e0e0;">
+		<div class="container">
+			<div class="row text-center mb-5">
+				<div class="col-lg-12" data-aos="fade-down">
+					<h2 class="section-heading">Deep Learning Extraction Workflow</h2>
+					<p class="text-muted">
+						Below is the step-by-step configuration used to extract building footprints using ArcGIS Pro’s
+						Deep Learning tools.
+					</p>
+				</div>
+			</div>
+
+			<div class="row justify-content-center">
+				<div class="col-md-10">
+					<div class="timeline-horizontal">
+
+						<!-- Step 1 -->
+						<div class="timeline-step" data-aos="fade-up" data-aos-delay="100">
+							<h5><i class="fa fa-pencil-square-o color"></i> Training Samples</h5>
+							<p class="text-muted small">
+								Digitized building footprints with a <code>Class</code> value of 1 are used as ground
+								truth labels for training data preparation.
+							</p>
+						</div>
+
+						<!-- Step 2 -->
+						<div class="timeline-step" data-aos="fade-up" data-aos-delay="200">
+							<h5><i class="fa fa-database color"></i> Export Training Data</h5>
+							<p class="text-muted small">
+								Exported using <strong>RCNN Masks</strong> format via the Export Training Data tool.
+								Tiled datasets are generated from imagery and labels.
+							</p>
+						</div>
+
+						<!-- Step 3 -->
+						<div class="timeline-step" data-aos="fade-up" data-aos-delay="300">
+							<h5><i class="fa fa-cogs color"></i> Model Architecture</h5>
+							<p class="text-muted small">
+								<strong>Mask R-CNN</strong> with <strong>ResNet-50</strong> is used as the backbone
+								model, allowing instance-based segmentation of building features.
+							</p>
+						</div>
+
+						<!-- Step 4 -->
+						<div class="timeline-step" data-aos="fade-up" data-aos-delay="400">
+							<h5><i class="fa fa-tachometer color"></i> Epoch & Processing</h5>
+							<p class="text-muted small">
+								Training uses GPU or CPU with customizable <strong>Max Epochs</strong> to improve model
+								accuracy and generalization.
+							</p>
+						</div>
+
+						<!-- Step 5 -->
+						<div class="timeline-step" data-aos="fade-up" data-aos-delay="500">
+							<h5><i class="fa fa-eye color"></i> Detection Output</h5>
+							<p class="text-muted small">
+								Final detection is executed via the <strong>Detect Objects Using Deep Learning</strong>
+								tool to produce vector building polygons.
+							</p>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<hr style="margin: 0; border: none; border-top: 4px solid #ddd;">
+
+	<section id="summary" class="page-section"
+		style="background-color: #eaf2f8; padding-top: 60px; padding-bottom: 60px; border-top: 4px solid #e0e0e0;">
+		<div class="container">
+			<div class="row text-center">
+				<div class="col-lg-12" data-aos="fade-down">
+					<h2 class="section-heading">Project Conclusion</h2>
+					<p class="text-muted mb-4">
+						This project combines geospatial AI, zoning regulations, and smart planning to propose an
+						efficient method of monitoring building development across urban areas.
+					</p>
+				</div>
+			</div>
+
+			<div class="row justify-content-center mt-3">
+				<div class="col-md-10" data-aos="fade-up" data-aos-delay="100">
+					<div class="card border-0 shadow-lg p-4 text-left rounded bg-white">
+						<h5><strong>Title:</strong> Smart Urban Mapping: Deep Learning-Driven Building Extraction for
+							Future Growth Monitoring</h5>
+
+						<p><strong>Background:</strong> Rapid urbanization presents challenges for governments to ensure
+							development complies with long-term spatial plans. Traditional methods are often
+							time-consuming, labor-intensive, and lack scalability.</p>
+
+						<p><strong>Objective:</strong> To automate the detection of urban structures using Deep Learning
+							in <strong>ArcGIS Pro</strong> and assess their conformity with <strong>RTRW (Spatial
+								Plans)</strong> in support of <strong>KKPR (Spatial Suitability Permits)</strong>.</p>
+
+						<p><strong>Workflow:</strong> Starting from aerial imagery, this project uses the <em>Detect
+								Objects Using Deep Learning</em> tool to generate vectorized building footprints. These
+							features are analyzed and overlaid with RTRW zoning data, identifying areas where buildings
+							conform—or deviate—from intended land use.</p>
+
+						<p><strong>Use Case Highlight:</strong> In Depok City, buildings located in the <em>Commercial
+								and Services Zone</em> were largely compliant, but some residential clusters raised
+							zoning suitability concerns. Such insights are crucial for KKPR evaluation, which relies on
+							spatial data like building location, size, and usage intensity.</p>
+
+						<p><strong>Key Technologies:</strong> ArcGIS Pro, ArcGIS Online, ArcGIS Instant Apps. The
+							project integrates <strong>GeoAI</strong> with spatial planning to support real-world
+							regulatory workflows.</p>
+
+						<p><strong>Impact:</strong> This approach offers a scalable, data-driven method for monitoring
+							urban growth and assessing spatial suitability. It enables faster KKPR assessments, enhances
+							spatial transparency, and supports smarter urban governance with Esri’s geospatial
+							ecosystem.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row justify-content-center mt-4" data-aos="fade-in" data-aos-delay="300">
+				<div class="col-md-4 text-center">
+					<a href="files/project-summary.pdf" class="btn btn-primary btn-lg" target="_blank">
+						<i class="fa fa-download"></i> &nbsp; Download Project Summary
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<hr style="margin: 0; border: none; border-top: 4px solid #ccc;">
+
+	<section class="page-section" style="background-color: #f7f7f7; padding: 30px 0; border-top: 4px solid #e0e0e0;">
+		<div class="container text-center" data-aos="fade-up">
+			<p style="margin: 0; font-size: 15px; color: #555;">
+				Created by <strong>Camila Fauzia</strong> &nbsp; | &nbsp;
+				<i class="fa fa-envelope"></i> camilafauzia12@gmail.com &nbsp; | &nbsp;
+				<i class="fa fa-linkedin-square"></i> <a href="https://www.linkedin.com/in/camila-fauzia-06bb79248/"
+					target="_blank">LinkedIn</a>
+			</p>
+		</div>
+	</section>
+	
+	<a href=" #top" class="topHome"><i class="fa fa-chevron-up fa-2x"></i></a>
+
+	<script src="js/modernizr-latest.js"></script>
+	<script src="js/jquery-1.8.2.min.js" type="text/javascript"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="js/jquery.isotope.min.js" type="text/javascript"></script>
+	<script src="js/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+	<script src="js/jquery.nav.js" type="text/javascript"></script>
+	<script src="js/jquery.cslider.js" type="text/javascript"></script>
+	<script src="js/custom.js" type="text/javascript"></script>
+	<!-- AOS JS -->
+	<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+	<script>
+		AOS.init({
+			once: true,
+			duration: 800
+		});
+	</script>
+
+</body>
+
+</html>
