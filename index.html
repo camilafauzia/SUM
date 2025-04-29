@@ -107,7 +107,14 @@
 						Permit)</strong>.
 				</p>
 				<p data-aos="fade-up" data-aos-delay="200">
-					Once extracted, the building data is published to <strong>ArcGIS Online</strong> for collaborative
+					Going further, extracted building data can be enhanced with spatial analytics such as
+					<strong>building density heatmaps</strong>, offering new perspectives on growth intensity and
+					development pressure at a granular level. By combining deep learning outputs with spatial
+					statistics, planners gain actionable insights to detect zoning violations, identify overbuilt zones,
+					and assess suitability patterns across urban space.
+				</p>
+				<p data-aos="fade-up" data-aos-delay="300">
+					Once processed, the data is published to <strong>ArcGIS Online</strong> for collaborative
 					exploration and decision-making. Through this GeoAI-powered workflow, the project demonstrates how
 					automation and smart mapping technologies can enhance policy enforcement, optimize spatial analysis,
 					and empower governments with faster, data-driven urban governance.
@@ -115,6 +122,7 @@
 			</div>
 		</div>
 	</section>
+
 
 	<hr style="margin: 0; border: none; border-top: 4px solid #ddd;">
 
@@ -157,13 +165,14 @@
 							authorities.</p>
 					</div>
 				</div>
-
 				<div class="col-md-3 col-sm-6" data-aos="zoom-in" data-aos-delay="400">
 					<div class="tray text-center">
 						<h3><i class="fa fa-chart-line color"></i> &nbsp;Spatial Analysis</h3>
-						<p>Overlays with <strong>RTRW (Spatial Plan)</strong> boundaries allow assessment of conformity
-							with zoning functions and inform <strong>KKPR (Spatial Suitability Permit)</strong>
-							evaluations for urban development.</p>
+						<p>
+							Zoning overlays and <strong>density heatmaps</strong> support <strong>KKPR</strong>
+							assessments and highlight growth intensity in urban areas. This helps identify zoning
+							mismatches and monitor development pressure spatially.
+						</p>
 					</div>
 				</div>
 			</div>
@@ -225,21 +234,21 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12 text-center" data-aos="fade-down">
-					<h2 class="section-heading">Use Case: Urban Growth & Zoning Assesment</h2>
+					<h2 class="section-heading">Use Case: Spatial Suitability & Growth Intensity</h2>
 					<p class="text-muted">
-						Building footprint data extracted using ArcGIS Pro’s Deep Learning capabilities can be
-						cross-referenced with zoning layers from the <strong>RTRW (Rencana Tata Ruang Wilayah / Spatial
-							Plan)</strong> to evaluate compliance for <strong>KKPR (Kesesuaian Kegiatan Pemanfaatan
-							Ruang / Spatial Suitability Permit)</strong>.
+						Extracted building footprints are used to assess spatial compliance through <strong>zoning
+							overlays</strong> and to analyze urban pressure via <strong>density heatmaps</strong>,
+						supporting more informed <strong>KKPR</strong> and urban growth evaluations.
 					</p>
 				</div>
 			</div>
 
+			<!-- ROW: RTRW OVERLAY -->
 			<div class="row align-items-center mt-5">
-				<div class="col-md-10 mx-auto" data-aos="zoom-in">
+				<div class="col-md-6" data-aos="zoom-in">
 					<div class="shadow-lg rounded overflow-hidden text-center">
 						<img src="images/rtr_depok.png" alt="RTR and building overlay" class="img-fluid"
-							style="border-radius: 10px; max-width: 80%; height: auto;">
+							style="border-radius: 10px; max-width: 100%; height: auto;">
 					</div>
 					<p class="text-muted text-center mt-2" style="font-style: italic; font-size: 13px;">
 						Note: The overlaid building footprints have been simplified due to file size constraints. Zoning
@@ -248,44 +257,65 @@
 					</p>
 				</div>
 
-				<div class="col-md-10 mx-auto mt-4" data-aos="fade-up">
-					<p>
-						<strong>KKPR</strong> is a regulatory mechanism in Indonesia that ensures land development
-						activities align with zoning regulations established in the <strong>RTRW</strong> or
-						<strong>RDTR (Detailed Spatial Plan)</strong>. Authorities assess whether buildings are located
-						in suitable zones and comply with allowable land use functions.
-					</p>
-					<p>
-						In this use case, building footprints extracted automatically using ArcGIS Pro’s <em>Detect
-							Objects Using Deep Learning</em> tool are spatially overlaid with zoning boundaries from
-						Depok City's official spatial plan. Most extracted buildings are situated in the <strong>Kawasan
-							Perdagangan dan Jasa</strong> (Commercial and Services Zone), and visual interpretation
-						confirms that many of them appear to be shopping malls and retail facilities — matching the
-						intended function.
-					</p>
-					<p>
-						However, a number of residential-looking structures also exist in this zone. While mixed-use
-						zoning may allow limited residential activity, it becomes an issue when housing dominates a zone
-						meant for commerce. Conversely, commercial buildings inside residential zones may also violate
-						zoning policy.
-					</p>
-					<p>
-						With deep learning-driven building extraction, urban planners and land officials can:
-					</p>
+				<div class="col-md-6" data-aos="fade-up">
+					<p><strong>KKPR</strong> is a regulatory mechanism that evaluates land development conformity to the
+						spatial designations outlined in the <strong>RTRW</strong> or <strong>RDTR</strong>. It ensures
+						alignment of building placement, function, and intensity with zoning regulations.</p>
+					<p>In the case shown, building footprints derived via deep learning are overlaid on zoning
+						boundaries. While most align with their intended land use, inconsistencies—such as excessive
+						residential buildings in commercial zones—may indicate violations.</p>
+					<p>GIS-based automation enables:</p>
 					<ul style="padding-left: 20px;">
-						<li><strong>Identify building locations</strong> relative to zoning designations.</li>
-						<li><strong>Measure building area and density</strong> to assess development intensity.</li>
-						<li><strong>Analyze spatial patterns</strong> to flag non-conforming land use.</li>
+						<li>Precise building-to-zone spatial intersections</li>
+						<li>Area-based suitability calculations</li>
+						<li>Pattern recognition to flag outliers</li>
 					</ul>
+					<p>This supports data-driven decisions for sustainable spatial policy enforcement.</p>
+				</div>
+			</div>
+
+			<!-- ROW: HEATMAP EMBED + PENJELASAN -->
+			<div class="row align-items-center mt-5">
+
+				<div class="col-md-6" data-aos="fade-up">
 					<p>
-						This geospatial approach streamlines the KKPR process by transforming manual checks into
-						efficient, data-driven assessments — ultimately supporting better compliance monitoring and
-						informed urban decision-making.
+						To quantify urban growth intensity, a <strong>density heatmap</strong> was generated based on
+						the distribution of building footprints. The map utilizes a 100×100 meter grid to compute the
+						number of structures within each cell.
+					</p>
+					<p>
+						In this visualization, darker orange cells indicate areas with exceptionally high structural
+						concentration—some exceeding <strong>55,000 structures per square kilometer</strong>. These
+						clusters suggest zones under significant urban pressure, likely characterized by tight housing
+						patterns or commercial agglomerations.
+					</p>
+					<p>
+						When overlaid on zoning maps, this heatmap helps flag potential <strong>inconsistencies between
+							actual development and zoning allowances</strong>, particularly in areas intended for
+						low-density housing or open spaces.
+					</p>
+					<p>
+						By offering a <strong>quantitative assessment of urban buildup</strong>, the heatmap enhances
+						spatial conformity checks and supports proactive planning in high-risk growth areas.
+					</p>
+				</div>
+
+
+				<div class="col-md-6" data-aos="zoom-in">
+					<div class="map-container shadow rounded" style="overflow: hidden; position: relative;">
+						<iframe
+							src="https://www.arcgis.com/apps/instant/basic/index.html?appid=e0b9a383b53d44d4b96851841074f8f7"
+							width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen>
+						</iframe>
+					</div>
+					<p class="text-muted text-center mt-2" style="font-style: italic; font-size: 13px;">
+						Heatmap of building density per grid cell generated using spatial analysis in ArcGIS Pro.
 					</p>
 				</div>
 			</div>
 		</div>
 	</section>
+
 
 	<hr style="margin: 0; border: none; border-top: 4px solid #ddd;">
 
@@ -439,8 +469,8 @@
 				<div class="col-lg-12" data-aos="fade-down">
 					<h2 class="section-heading">Project Conclusion</h2>
 					<p class="text-muted mb-4">
-						This project combines geospatial AI, zoning regulations, and smart planning to propose an
-						efficient method of monitoring building development across urban areas.
+						This project integrates GeoAI, zoning policy, and advanced spatial analytics to automate urban
+						monitoring and support spatial planning decisions in growing cities.
 					</p>
 				</div>
 			</div>
@@ -451,35 +481,33 @@
 						<h5><strong>Title:</strong> Smart Urban Mapping: Deep Learning-Driven Building Extraction for
 							Future Growth Monitoring</h5>
 
-						<p><strong>Background:</strong> Rapid urbanization presents challenges for governments to ensure
-							development complies with long-term spatial plans. Traditional methods are often
-							<strong>time-consuming, labor-intensive, and lack scalability.</strong></p>
+						<p><strong>Background:</strong> As urban areas expand rapidly, ensuring development aligns with
+							spatial regulations like <strong>RTRW (Spatial Plans)</strong> becomes increasingly
+							difficult using manual methods.</p>
 
-						<p><strong>Objective:</strong> To automate the detection of urban structures using Deep Learning
-							in <strong>ArcGIS Pro</strong> and assess their conformity with <strong>RTRW (Spatial
-								Plans)</strong> in support of <strong>KKPR (Spatial Suitability Permits)</strong>.</p>
+						<p><strong>Objective:</strong> To automate the mapping of building footprints using <strong>Deep
+								Learning in ArcGIS Pro</strong> and evaluate spatial conformity for <strong>KKPR
+								(Spatial Suitability Permits)</strong>.</p>
 
-						<p><strong>Workflow:</strong> Starting from aerial imagery, this project uses the <em>Detect
-								Objects Using Deep Learning</em> tool to generate vectorized building footprints. These
-							features are analyzed and overlaid with RTRW zoning data, identifying areas where buildings
-							conform—or deviate—from intended land use.</p>
+						<p><strong>Workflow:</strong> Starting with aerial imagery, building features are extracted with
+							<em>Detect Objects Using Deep Learning</em>, overlaid with zoning maps, and further analyzed
+							using a <strong>density-based heatmap</strong> to detect urban pressure zones.</p>
 
-						<p><strong>Use Case Highlight:</strong> In Depok City, buildings located in the <em>Commercial
-								and Services Zone</em> were largely compliant, but some residential clusters raised
-							zoning suitability concerns. Such insights are crucial for KKPR evaluation, which relies on
-							spatial data like building location, size, and usage intensity.</p>
+						<p><strong>Use Case Highlight:</strong> In Depok City, spatial overlays revealed dominant
+							compliance in commercial zones, but also indicated informal residential expansion. Heatmap
+							analysis emphasized pockets of high development intensity that may exceed regulated
+							thresholds.</p>
 
-						<p><strong>Key Technologies:</strong> ArcGIS Pro, ArcGIS Online, ArcGIS Instant Apps. The
-							project integrates <strong>GeoAI</strong> with spatial planning to support real-world
-							regulatory workflows.</p>
+						<p><strong>Technologies Used:</strong> ArcGIS Pro, ArcGIS Online, ArcGIS Instant Apps. These
+							tools enabled automation, visualization, and spatial intelligence for decision-makers.</p>
 
-						<p><strong>Impact:</strong> This approach offers a scalable, data-driven method for monitoring
-							urban growth and assessing spatial suitability. It enables faster KKPR assessments, enhances
-							spatial transparency, and supports smarter urban governance with Esri’s geospatial
-							ecosystem.</p>
+						<p><strong>Impact:</strong> This workflow demonstrates how AI-powered geospatial tools can
+							support urban governance by streamlining KKPR evaluations and revealing emerging spatial
+							trends — a scalable approach for smarter, data-informed planning.</p>
 					</div>
 				</div>
 			</div>
+
 
 			<div class="row justify-content-center mt-4" data-aos="fade-in" data-aos-delay="300">
 				<div class="col-md-4 text-center">
